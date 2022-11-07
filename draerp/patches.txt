@@ -1,0 +1,319 @@
+[pre_model_sync]
+draerp.patches.v12_0.update_is_cancelled_field
+draerp.patches.v11_0.rename_production_order_to_work_order
+draerp.patches.v13_0.add_bin_unique_constraint
+draerp.patches.v11_0.refactor_naming_series
+draerp.patches.v11_0.refactor_autoname_naming
+draerp.patches.v14_0.change_is_subcontracted_fieldtype
+execute:frappe.reload_doc("accounts", "doctype", "POS Payment Method") #2020-05-28
+draerp.patches.v4_2.update_requested_and_ordered_qty #2021-03-31
+draerp.patches.v5_7.update_item_description_based_on_item_master
+draerp.patches.v4_2.repost_reserved_qty #2021-03-31
+draerp.patches.v8_1.removed_roles_from_gst_report_non_indian_account #16-08-2018
+draerp.patches.v10_0.fichier_des_ecritures_comptables_for_france
+draerp.patches.v10_0.rename_price_to_rate_in_pricing_rule
+draerp.patches.v10_0.set_currency_in_pricing_rule
+draerp.patches.v10_0.update_translatable_fields
+execute:frappe.delete_doc('DocType', 'Production Planning Tool', ignore_missing=True)
+draerp.patches.v10_0.add_default_cash_flow_mappers
+draerp.patches.v11_0.rename_duplicate_item_code_values
+draerp.patches.v11_0.make_quality_inspection_template
+draerp.patches.v11_0.merge_land_unit_with_location
+draerp.patches.v11_0.add_index_on_nestedset_doctypes
+draerp.patches.v11_0.remove_modules_setup_page
+draerp.patches.v11_0.update_department_lft_rgt
+draerp.patches.v11_0.uom_conversion_data #30-06-2018
+draerp.patches.v11_0.update_account_type_in_party_type
+draerp.patches.v11_0.rename_supplier_type_to_supplier_group
+draerp.patches.v10_1.transfer_subscription_to_auto_repeat
+draerp.patches.v11_0.update_brand_in_item_price
+draerp.patches.v11_0.create_default_success_action
+draerp.patches.v11_0.rebuild_tree_for_company
+draerp.patches.v11_0.create_department_records_for_each_company
+draerp.patches.v11_0.make_location_from_warehouse
+draerp.patches.v11_0.make_asset_finance_book_against_old_entries
+draerp.patches.v11_0.check_buying_selling_in_currency_exchange
+draerp.patches.v11_0.move_item_defaults_to_child_table_for_multicompany #02-07-2018 #19-06-2019
+draerp.patches.v11_0.rename_overproduction_percent_field
+draerp.patches.v11_0.update_backflush_subcontract_rm_based_on_bom
+draerp.patches.v11_0.rename_members_with_naming_series #04-06-2018
+draerp.patches.v11_0.set_update_field_and_value_in_workflow_state
+draerp.patches.v11_0.update_total_qty_field
+draerp.patches.v11_0.update_sales_partner_type
+draerp.patches.v11_0.rename_asset_adjustment_doctype
+draerp.patches.v11_0.set_user_permissions_for_department
+draerp.patches.v11_0.hr_ux_cleanups
+draerp.patches.v11_0.set_department_for_doctypes
+draerp.patches.v11_0.update_allow_transfer_for_manufacture
+draerp.patches.v11_0.add_item_group_defaults
+draerp.patches.v11_0.add_expense_claim_default_account
+draerp.patches.v11_0.make_job_card
+draerp.patches.v11_0.add_default_dispatch_notification_template
+draerp.patches.v11_0.add_market_segments
+draerp.patches.v11_0.add_sales_stages
+execute:frappe.delete_doc_if_exists("Page", "sales-analytics")
+execute:frappe.delete_doc_if_exists("Page", "purchase-analytics")
+execute:frappe.delete_doc_if_exists("Page", "stock-analytics")
+execute:frappe.delete_doc_if_exists("Page", "production-analytics")
+draerp.patches.v10_0.item_barcode_childtable_migrate # 16-02-2019
+draerp.patches.v11_0.update_delivery_trip_status
+draerp.patches.v11_0.rename_bom_wo_fields
+draerp.patches.v12_0.set_default_homepage_type
+draerp.patches.v11_0.renamed_from_to_fields_in_project
+draerp.patches.v11_1.setup_guardian_role
+execute:frappe.delete_doc('DocType', 'Notification Control')
+draerp.patches.v11_0.remove_barcodes_field_from_copy_fields_to_variants
+draerp.patches.v12_0.set_task_status
+draerp.patches.v11_0.make_italian_localization_fields # 26-03-2019
+draerp.patches.v12_0.add_item_name_in_work_orders
+draerp.patches.v12_0.update_pricing_rule_fields
+draerp.patches.v11_1.make_job_card_time_logs
+draerp.patches.v12_0.rename_pricing_rule_child_doctypes
+draerp.patches.v12_0.move_target_distribution_from_parent_to_child
+draerp.patches.v12_0.stock_entry_enhancements
+draerp.patches.v10_0.item_barcode_childtable_migrate # 16-02-2019 #25-06-2019
+draerp.patches.v12_0.make_item_manufacturer
+draerp.patches.v12_0.move_item_tax_to_item_tax_template
+draerp.patches.v11_1.set_variant_based_on
+draerp.patches.v11_1.woocommerce_set_creation_user
+draerp.patches.v11_1.rename_depends_on_lwp
+execute:frappe.delete_doc("Report", "Inactive Items")
+draerp.patches.v11_1.delete_scheduling_tool
+draerp.patches.v12_0.rename_tolerance_fields
+execute:frappe.delete_doc_if_exists("Page", "support-analytics")
+draerp.patches.v12_0.remove_patient_medical_record_page
+draerp.patches.v11_1.move_customer_lead_to_dynamic_column
+draerp.patches.v11_1.set_default_action_for_quality_inspection
+draerp.patches.v11_1.delete_bom_browser
+draerp.patches.v11_1.set_missing_title_for_quotation
+draerp.patches.v11_1.update_bank_transaction_status
+draerp.patches.v11_1.renamed_delayed_item_report
+draerp.patches.v11_1.set_missing_opportunity_from
+draerp.patches.v12_0.set_quotation_status
+draerp.patches.v12_0.set_priority_for_support
+draerp.patches.v12_0.delete_priority_property_setter
+draerp.patches.v12_0.set_default_batch_size
+execute:frappe.delete_doc("DocType", "Project Task")
+draerp.patches.v11_1.update_default_supplier_in_item_defaults
+draerp.patches.v12_0.update_due_date_in_gle
+draerp.patches.v12_0.add_default_buying_selling_terms_in_company
+draerp.patches.v12_0.create_accounting_dimensions_in_missing_doctypes #2020-05-11
+draerp.patches.v11_1.set_status_for_material_request_type_manufacture
+draerp.patches.v12_0.move_plaid_settings_to_doctype
+execute:frappe.reload_doc('desk', 'doctype', 'dashboard_chart_link')
+execute:frappe.reload_doc('desk', 'doctype', 'dashboard')
+execute:frappe.reload_doc('desk', 'doctype', 'dashboard_chart_source')
+execute:frappe.reload_doc('desk', 'doctype', 'dashboard_chart')
+execute:frappe.reload_doc('desk', 'doctype', 'dashboard_chart_field')
+draerp.patches.v12_0.remove_bank_remittance_custom_fields
+execute:frappe.delete_doc_if_exists("Report", "Loan Repayment")
+draerp.patches.v12_0.move_credit_limit_to_customer_credit_limit
+draerp.patches.v12_0.add_variant_of_in_item_attribute_table
+draerp.patches.v12_0.rename_bank_account_field_in_journal_entry_account
+draerp.patches.v12_0.create_default_energy_point_rules
+draerp.patches.v12_0.set_produced_qty_field_in_sales_order_for_work_order
+draerp.patches.v12_0.set_cwip_and_delete_asset_settings
+draerp.patches.v12_0.set_expense_account_in_landed_cost_voucher_taxes
+draerp.patches.v12_0.replace_accounting_with_accounts_in_home_settings
+draerp.patches.v12_0.set_automatically_process_deferred_accounting_in_accounts_settings
+draerp.patches.v12_0.set_payment_entry_status
+draerp.patches.v12_0.update_owner_fields_in_acc_dimension_custom_fields
+draerp.patches.v12_0.update_price_or_product_discount
+draerp.patches.v12_0.set_production_capacity_in_workstation
+draerp.patches.v12_0.set_employee_preferred_emails
+draerp.patches.v12_0.set_against_blanket_order_in_sales_and_purchase_order
+draerp.patches.v12_0.set_cost_center_in_child_table_of_expense_claim
+draerp.patches.v12_0.set_lead_title_field
+draerp.patches.v12_0.set_permission_einvoicing
+draerp.patches.v12_0.create_irs_1099_field_united_states
+draerp.patches.v12_0.move_bank_account_swift_number_to_bank
+draerp.patches.v12_0.rename_bank_reconciliation
+draerp.patches.v12_0.rename_bank_reconciliation_fields # 2020-01-22
+draerp.patches.v12_0.set_purchase_receipt_delivery_note_detail
+draerp.patches.v12_0.add_permission_in_lower_deduction
+draerp.patches.v12_0.set_received_qty_in_material_request_as_per_stock_uom
+draerp.patches.v12_0.rename_account_type_doctype
+draerp.patches.v12_0.recalculate_requested_qty_in_bin
+draerp.patches.v12_0.set_total_batch_quantity
+draerp.patches.v12_0.rename_mws_settings_fields
+draerp.patches.v12_0.set_updated_purpose_in_pick_list
+draerp.patches.v12_0.repost_stock_ledger_entries_for_target_warehouse
+draerp.patches.v12_0.update_end_date_and_status_in_email_campaign
+draerp.patches.v12_0.fix_quotation_expired_status
+draerp.patches.v12_0.rename_pos_closing_doctype
+draerp.patches.v13_0.replace_pos_payment_mode_table #2020-12-29
+execute:frappe.delete_doc_if_exists("Page", "appointment-analytic")
+execute:frappe.rename_doc("Desk Page", "Getting Started", "Home", force=True)
+draerp.patches.v12_0.unset_customer_supplier_based_on_type_of_item_price
+draerp.patches.v12_0.set_valid_till_date_in_supplier_quotation
+draerp.patches.v13_0.update_old_loans
+draerp.patches.v12_0.set_serial_no_status #2020-05-21
+draerp.patches.v12_0.update_price_list_currency_in_bom
+execute:frappe.reload_doctype('Dashboard')
+execute:frappe.reload_doc('desk', 'doctype', 'number_card_link')
+execute:frappe.delete_doc_if_exists('Dashboard', 'Accounts')
+draerp.patches.v13_0.update_actual_start_and_end_date_in_wo
+draerp.patches.v12_0.update_bom_in_so_mr
+execute:frappe.delete_doc("Report", "Department Analytics")
+execute:frappe.rename_doc("Desk Page", "Loan Management", "Loan", force=True)
+draerp.patches.v12_0.update_uom_conversion_factor
+draerp.patches.v13_0.replace_pos_page_with_point_of_sale_page
+draerp.patches.v13_0.delete_old_purchase_reports
+draerp.patches.v12_0.set_italian_import_supplier_invoice_permissions
+draerp.patches.v13_0.update_subscription
+draerp.patches.v12_0.unhide_cost_center_field
+draerp.patches.v13_0.update_sla_enhancements
+draerp.patches.v13_0.update_deferred_settings
+draerp.patches.v12_0.set_multi_uom_in_rfq
+draerp.patches.v13_0.delete_old_sales_reports
+execute:frappe.delete_doc_if_exists("DocType", "Bank Reconciliation")
+execute:frappe.reload_doc("regional", "doctype", "e_invoice_settings")
+draerp.patches.v13_0.loyalty_points_entry_for_pos_invoice #22-07-2020
+draerp.patches.v12_0.add_taxjar_integration_field
+draerp.patches.v12_0.fix_percent_complete_for_projects
+draerp.patches.v13_0.delete_report_requested_items_to_order
+draerp.patches.v12_0.update_item_tax_template_company
+draerp.patches.v13_0.move_branch_code_to_bank_account
+draerp.patches.v13_0.add_standard_navbar_items #2021-03-24
+draerp.patches.v13_0.stock_entry_enhancements
+draerp.patches.v12_0.rename_lost_reason_detail
+draerp.patches.v13_0.drop_razorpay_payload_column
+draerp.patches.v13_0.rename_issue_doctype_fields
+draerp.patches.v13_0.change_default_pos_print_format
+draerp.patches.v13_0.set_youtube_video_id
+draerp.patches.v13_0.set_app_name
+draerp.patches.v13_0.print_uom_after_quantity_patch
+draerp.patches.v13_0.set_payment_channel_in_payment_gateway_account
+execute:frappe.delete_doc("Report", "Quoted Item Comparison")
+draerp.patches.v13_0.update_member_email_address
+draerp.patches.v13_0.update_pos_closing_entry_in_merge_log
+draerp.patches.v13_0.add_po_to_global_search
+draerp.patches.v13_0.update_returned_qty_in_pr_dn
+execute:frappe.rename_doc("Workspace", "Loan", "Loan Management", ignore_if_exists=True, force=True)
+draerp.patches.v13_0.create_uae_pos_invoice_fields
+draerp.patches.v13_0.update_project_template_tasks
+draerp.patches.v13_0.convert_qi_parameter_to_link_field
+draerp.patches.v13_0.add_naming_series_to_old_projects # 1-02-2021
+draerp.patches.v13_0.update_payment_terms_outstanding
+draerp.patches.v13_0.item_reposting_for_incorrect_sl_and_gl
+draerp.patches.v13_0.delete_old_bank_reconciliation_doctypes
+draerp.patches.v13_0.update_vehicle_no_reqd_condition
+draerp.patches.v13_0.rename_membership_settings_to_non_profit_settings
+draerp.patches.v13_0.setup_uae_vat_fields
+execute:frappe.db.set_value('System Settings', None, 'app_name', 'DraERP')
+draerp.patches.v12_0.purchase_receipt_status
+draerp.patches.v13_0.fix_non_unique_represents_company
+draerp.patches.v12_0.add_document_type_field_for_italy_einvoicing
+draerp.patches.v13_0.update_shipment_status
+draerp.patches.v13_0.remove_attribute_field_from_item_variant_setting
+draerp.patches.v13_0.set_pos_closing_as_failed
+execute:frappe.rename_doc("Workspace", "Loan Management", "Loans", force=True)
+draerp.patches.v13_0.update_timesheet_changes
+draerp.patches.v13_0.add_doctype_to_sla #14-06-2021
+draerp.patches.v13_0.bill_for_rejected_quantity_in_purchase_invoice
+draerp.patches.v13_0.rename_issue_status_hold_to_on_hold
+draerp.patches.v13_0.update_response_by_variance
+draerp.patches.v13_0.update_job_card_details
+draerp.patches.v13_0.add_missing_fg_item_for_stock_entry
+draerp.patches.v13_0.update_subscription_status_in_memberships
+draerp.patches.v13_0.update_amt_in_work_order_required_items
+draerp.patches.v13_0.delete_orphaned_tables
+draerp.patches.v13_0.update_tds_check_field #3
+draerp.patches.v13_0.add_custom_field_for_south_africa #2
+draerp.patches.v13_0.update_recipient_email_digest
+draerp.patches.v13_0.shopify_deprecation_warning
+draerp.patches.v13_0.remove_bad_selling_defaults
+draerp.patches.v13_0.trim_whitespace_from_serial_nos  # 16-01-2022
+draerp.patches.v13_0.migrate_stripe_api
+draerp.patches.v13_0.reset_clearance_date_for_intracompany_payment_entries
+execute:frappe.reload_doc("draerp_integrations", "doctype", "TaxJar Settings")
+execute:frappe.reload_doc("draerp_integrations", "doctype", "Product Tax Category")
+draerp.patches.v13_0.custom_fields_for_taxjar_integration          #08-11-2021
+draerp.patches.v13_0.set_operation_time_based_on_operating_cost
+draerp.patches.v13_0.create_gst_payment_entry_fields #27-11-2021
+draerp.patches.v13_0.fix_invoice_statuses
+draerp.patches.v13_0.create_website_items #30-09-2021
+draerp.patches.v13_0.populate_e_commerce_settings
+draerp.patches.v13_0.make_homepage_products_website_items
+draerp.patches.v13_0.replace_supplier_item_group_with_party_specific_item
+draerp.patches.v13_0.update_dates_in_tax_withholding_category
+draerp.patches.v14_0.update_opportunity_currency_fields
+draerp.patches.v13_0.create_accounting_dimensions_in_pos_doctypes
+draerp.patches.v13_0.create_custom_field_for_finance_book
+draerp.patches.v13_0.modify_invalid_gain_loss_gl_entries #2
+draerp.patches.v13_0.fix_additional_cost_in_mfg_stock_entry
+draerp.patches.v13_0.set_status_in_maintenance_schedule_table
+draerp.patches.v13_0.enable_scheduler_job_for_item_reposting
+draerp.patches.v13_0.requeue_failed_reposts
+draerp.patches.v13_0.update_job_card_status
+draerp.patches.v13_0.enable_uoms
+draerp.patches.v12_0.update_production_plan_status
+draerp.patches.v13_0.healthcare_deprecation_warning
+draerp.patches.v13_0.item_naming_series_not_mandatory
+draerp.patches.v13_0.update_category_in_ltds_certificate
+draerp.patches.v13_0.fetch_thumbnail_in_website_items
+draerp.patches.v13_0.update_maintenance_schedule_field_in_visit
+draerp.patches.v13_0.create_ksa_vat_custom_fields # 07-01-2022
+draerp.patches.v14_0.migrate_crm_settings
+draerp.patches.v13_0.rename_ksa_qr_field
+draerp.patches.v13_0.wipe_serial_no_field_for_0_qty
+draerp.patches.v13_0.disable_ksa_print_format_for_others # 16-12-2021
+draerp.patches.v13_0.agriculture_deprecation_warning
+draerp.patches.v13_0.hospitality_deprecation_warning
+draerp.patches.v13_0.update_asset_quantity_field
+draerp.patches.v13_0.delete_bank_reconciliation_detail
+draerp.patches.v13_0.enable_provisional_accounting
+draerp.patches.v13_0.non_profit_deprecation_warning
+draerp.patches.v13_0.enable_ksa_vat_docs #1
+draerp.patches.v13_0.show_india_localisation_deprecation_warning
+draerp.patches.v13_0.show_hr_payroll_deprecation_warning
+draerp.patches.v13_0.reset_corrupt_defaults
+draerp.patches.v13_0.create_accounting_dimensions_for_asset_repair
+
+[post_model_sync]
+execute:frappe.delete_doc_if_exists('Workspace', 'DraERP Integrations Settings')
+draerp.patches.v14_0.rename_ongoing_status_in_sla_documents
+draerp.patches.v14_0.delete_shopify_doctypes
+draerp.patches.v14_0.delete_healthcare_doctypes
+draerp.patches.v14_0.delete_hub_doctypes
+draerp.patches.v14_0.delete_hospitality_doctypes # 20-01-2022
+draerp.patches.v14_0.delete_agriculture_doctypes # 15-06-2022
+draerp.patches.v14_0.delete_education_doctypes
+draerp.patches.v14_0.delete_datev_doctypes
+draerp.patches.v14_0.rearrange_company_fields
+draerp.patches.v13_0.update_sane_transfer_against
+draerp.patches.v14_0.migrate_cost_center_allocations
+draerp.patches.v13_0.convert_to_website_item_in_item_card_group_template
+draerp.patches.v13_0.shopping_cart_to_ecommerce
+draerp.patches.v13_0.update_disbursement_account
+draerp.patches.v13_0.update_reserved_qty_closed_wo
+draerp.patches.v13_0.update_exchange_rate_settings
+draerp.patches.v14_0.delete_amazon_mws_doctype
+draerp.patches.v13_0.set_work_order_qty_in_so_from_mr
+draerp.patches.v13_0.update_accounts_in_loan_docs
+draerp.patches.v14_0.update_batch_valuation_flag
+draerp.patches.v14_0.delete_non_profit_doctypes
+draerp.patches.v13_0.add_cost_center_in_loans
+draerp.patches.v13_0.set_return_against_in_pos_invoice_references
+draerp.patches.v13_0.remove_unknown_links_to_prod_plan_items # 24-03-2022
+draerp.patches.v13_0.copy_custom_field_filters_to_website_item
+draerp.patches.v13_0.change_default_item_manufacturer_fieldtype
+draerp.patches.v13_0.requeue_recoverable_reposts
+draerp.patches.v14_0.discount_accounting_separation
+draerp.patches.v13_0.create_accounting_dimensions_in_orders
+draerp.patches.v13_0.set_per_billed_in_return_delivery_note
+execute:frappe.delete_doc("DocType", "Naming Series")
+draerp.patches.v13_0.job_card_status_on_hold
+draerp.patches.v14_0.copy_is_subcontracted_value_to_is_old_subcontracting_flow
+draerp.patches.v14_0.migrate_gl_to_payment_ledger
+draerp.patches.v14_0.crm_ux_cleanup
+draerp.patches.v14_0.migrate_existing_lead_notes_as_per_the_new_format
+draerp.patches.v14_0.remove_india_localisation # 14-07-2022
+draerp.patches.v13_0.fix_number_and_frequency_for_monthly_depreciation
+draerp.patches.v14_0.remove_hr_and_payroll_modules # 20-07-2022
+draerp.patches.v14_0.fix_crm_no_of_employees
+draerp.patches.v14_0.create_accounting_dimensions_in_subcontracting_doctypes
+draerp.patches.v14_0.fix_subcontracting_receipt_gl_entries
+draerp.patches.v14_0.migrate_remarks_from_gl_to_payment_ledger
+draerp.patches.v13_0.update_schedule_type_in_loans
+draerp.patches.v14_0.create_accounting_dimensions_for_asset_capitalization
